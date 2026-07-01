@@ -9,3 +9,17 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* src/index.css ya global CSS file mein add karein */
+/* Chrome, Safari, Edge, and Opera se scrollbar gayab karne ke liye */
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Firefox aur Internet Explorer/Edge ke liye */
+html, body {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
+}
